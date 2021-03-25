@@ -27,22 +27,22 @@ setInterval(function() {
 
 
 // ############### Saves Hour as Key and Text as Value ################
-function saveToStorage() {
-    var text = (event.target).previousElementSibling.value;
-    var parentID = JSON.stringify((event.target).parentNode.getAttribute('id'));
-    localStorage.setItem(parentID, text);
-};
 
 
 saveBtn.on("click", function(event) {
-    saveToStorage();
+
+    var text = (event.target).previousElementSibling.value;
+    var parentID = (event.target).parentNode.getAttribute('id');
+    localStorage.setItem(parentID, text);
 });
 
+
 function renderSchedule() {
-    var text10 = localStorage.getItem('hour-10');
-    console.log(text10);
     
-    console.log(document.getElementById("#hour-10").type);
+    var storageKey = hour10.attr('id');
+    var value = localStorage.getItem(storageKey);
+    hour10.find(".description").val(value);
+    
 };
 renderSchedule();
 
@@ -51,7 +51,7 @@ renderSchedule();
 
 
 
-// localStorage.setItem("todos", JSON.stringify(todos));
+
 
 
 // ################ Reference code ###################
