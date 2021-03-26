@@ -36,7 +36,7 @@ saveBtn.on("click", function(event) {
     localStorage.setItem(parentID, text);
 });
 
-
+// ################### Render Each Hour's Text Value on Loading ########
 function renderSchedule() {
 
   
@@ -82,64 +82,145 @@ renderSchedule();
 
 
 
+
+
+
+
+
 // ###################### Hour Coloring ####################
 
-// function colorShift() {
-//     var currentHour = moment().hour();
-//     console.log(currentHour);
-
-//     if(currentHour <= 8 || currentHour >=17)
-// }
-
-
-
-
-
-
-
-
-
-
-
-
+function colorShift() {
 
     
-// function renderSchedule() {
-    
-//     var storageKey = hour10.attr('id');
-//     var value = localStorage.getItem(storageKey);
-//     hour10.find(".description").val(value);
-    
-// };
-// renderSchedule();
-
-    // var storageKey9 = hour9.attr('id');
-    // var value9 = localStorage.getItem(storageKey9);
-    // hour9.find(".description").val(value9);
-    
-    // var storageKey10 = hour10.attr('id');
-    // var value10 = localStorage.getItem(storageKey10);
-    // hour10.find(".description").val(value10);
-
-    // var storageKey11 = hour11.attr('id');
-    // var value11 = localStorage.getItem(storageKey11);
-    // hour11.find(".description").val(value11);
-    
-    // var storageKey12 = hour12.attr('id');
-    // var value12 = localStorage.getItem(storageKey12);
-    // hour12.find(".description").val(value12);
-
-    // var storageKey = hour10.attr('id');
-    // var value = localStorage.getItem(storageKey);
-    // hour10.find(".description").val(value);
+    var currentHour = moment().hour();
     
 
+    if (currentHour >= 0 && currentHour < 9) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#d3d3d3");
+        hour12.css("background-color", "#d3d3d3");
+        hour13.css("background-color", "#d3d3d3");
+        hour14.css("background-color", "#d3d3d3");
+        hour15.css("background-color", "#d3d3d3");
+        hour16.css("background-color", "#d3d3d3");
+        hour17.css("background-color", "#d3d3d3");
 
+    } else if (currentHour >= 9 && currentHour <10) {
+        hour9.css("background-color", "#ff6961");
+        hour10.css("background-color", "##77dd77");
+        hour11.css("background-color", "##77dd77");
+        hour12.css("background-color", "##77dd77");
+        hour13.css("background-color", "##77dd77");
+        hour14.css("background-color", "##77dd77");
+        hour15.css("background-color", "##77dd77");
+        hour16.css("background-color", "#77dd77");
+        hour17.css("background-color", "#77dd77");
 
+    } else if (currentHour >= 10 && currentHour <11) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#ff6961");
+        hour11.css("background-color", "#77dd77");
+        hour12.css("background-color", "#77dd77");
+        hour13.css("background-color", "#77dd77");
+        hour14.css("background-color", "#77dd77");
+        hour15.css("background-color", "#77dd77");
+        hour16.css("background-color", "#77dd77");
+        hour17.css("background-color", "#77dd77");
 
+    } else if (currentHour >= 11 && currentHour <12) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#ff6961");
+        hour12.css("background-color", "#77dd77");
+        hour13.css("background-color", "#77dd77");
+        hour14.css("background-color", "#77dd77");
+        hour15.css("background-color", "#77dd77");
+        hour16.css("background-color", "#77dd77");
+        hour17.css("background-color", "#77dd77");
 
+    } else if (currentHour >= 12 && currentHour <13) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#d3d3d3");
+        hour12.css("background-color", "#ff6961");
+        hour13.css("background-color", "#77dd77");
+        hour14.css("background-color", "#77dd77");
+        hour15.css("background-color", "#77dd77");
+        hour16.css("background-color", "#77dd77");
+        hour17.css("background-color", "#77dd77");
 
+    } else if (currentHour >= 13 && currentHour <14) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#d3d3d3");
+        hour12.css("background-color", "#d3d3d3");
+        hour13.css("background-color", "#ff6961");
+        hour14.css("background-color", "#77dd77");
+        hour15.css("background-color", "#77dd77");
+        hour16.css("background-color", "#77dd77");
+        hour17.css("background-color", "#77dd77");
 
+    } else if (currentHour >= 14 && currentHour <15) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#d3d3d3");
+        hour12.css("background-color", "#d3d3d3");
+        hour13.css("background-color", "#d3d3d3");
+        hour14.css("background-color", "#ff6961");
+        hour15.css("background-color", "#77dd77");
+        hour16.css("background-color", "#77dd77");
+        hour17.css("background-color", "#77dd77");
+
+    }  else if (currentHour >= 15 && currentHour <16) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#d3d3d3");
+        hour12.css("background-color", "#d3d3d3");
+        hour13.css("background-color", "#d3d3d3");
+        hour14.css("background-color", "#d3d3d3");
+        hour15.css("background-color", "#ff6961");
+        hour16.css("background-color", "#77dd77");
+        hour17.css("background-color", "#77dd77");
+    
+    }  else if (currentHour >= 16 && currentHour <17) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#d3d3d3");
+        hour12.css("background-color", "#d3d3d3");
+        hour13.css("background-color", "#d3d3d3");
+        hour14.css("background-color", "#d3d3d3");
+        hour15.css("background-color", "#d3d3d3");
+        hour16.css("background-color", "#ff6961");
+        hour17.css("background-color", "#77dd77");
+
+    } else if (currentHour >= 17 && currentHour <18) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#d3d3d3");
+        hour12.css("background-color", "#d3d3d3");
+        hour13.css("background-color", "#d3d3d3");
+        hour14.css("background-color", "#d3d3d3");
+        hour15.css("background-color", "#d3d3d3");
+        hour16.css("background-color", "#d3d3d3");
+        hour17.css("background-color", "#ff6961");
+
+    } else if (currentHour >= 18 && currentHour <24) {
+        hour9.css("background-color", "#d3d3d3");
+        hour10.css("background-color", "#d3d3d3");
+        hour11.css("background-color", "#d3d3d3");
+        hour12.css("background-color", "#d3d3d3");
+        hour13.css("background-color", "#d3d3d3");
+        hour14.css("background-color", "#d3d3d3");
+        hour15.css("background-color", "#d3d3d3");
+        hour16.css("background-color", "#d3d3d3");
+        hour17.css("background-color", "#d3d3d3"); 
+    }
+}
+
+colorShift();
+
+    
 
 
 
