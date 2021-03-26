@@ -17,7 +17,7 @@ var future = $('.future');
 
 
 
-// ################# Sets the current Date At Top of Page #################
+// ################# Sets the current Day At Top of Page #################
 
 setInterval(function() {
     var time = moment().format("dddd, MMMM Do");
@@ -26,8 +26,7 @@ setInterval(function() {
  
 
 
-// ############### Saves Hour as Key and Text as Value ################
-
+// ############### Saves Hour as Key and Text as Value ###################
 
 saveBtn.on("click", function(event) {
 
@@ -36,7 +35,8 @@ saveBtn.on("click", function(event) {
     localStorage.setItem(parentID, text);
 });
 
-// ################### Render Each Hour's Text Value on Loading ########
+// ################### Render Each Hour's Text Value on Loading ##########
+
 function renderSchedule() {
 
   
@@ -81,13 +81,7 @@ function renderSchedule() {
 renderSchedule();
 
 
-
-
-
-
-
-
-// ###################### Hour Coloring ####################
+// ###################### Hour Coloring #############################
 
 function colorShift() {
 
