@@ -1,10 +1,10 @@
-
-
 # WorkDayScheduler
+
+![App Screenshot](WorkDayScheduler.png "Description")
 
 The purpose of this project is to create a Work Day Scheduler in order for the user to be able to schedule and save events for the current day.
 
-The URL for this website is: https://sjlevalley.github.io/WorkDayScheduler/
+The URL for this website is: https://sjlevalley.github.io/WeatherDashboard/
 
 ## Installation
 

@@ -81,7 +81,7 @@ function renderSchedule() {
 renderSchedule();
 
 
-// ###################### Hour Coloring #############################
+// ###################### Hour Coloring ################################
 
 function colorShift() {
 
